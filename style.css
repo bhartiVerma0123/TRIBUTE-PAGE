@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ .container {
+  width: 100%;
+margin: 0 auto;
+}
+.container1 {
+  max-width: 80%;
+  margin: 10px auto;
+  background-color: rgb(243, 238, 238);
+  border-radius: 10px;
+  box-shadow: 0px 10px rgba(204, 53, 53, 0.1);
+}
+.navbar {
+  width: 100%;
+  overflow: auto;
+  position: sticky;
+  text-align: center;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.navbar .nav-links {
+  color: #fff;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar .nav-links:hover {
+  text-decoration: underline orange;
+  color: rgb(45, 215, 45);
+}
+
+h1{
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin: 15px;
+}
+
+#profilepic {
+  display: block;
+  width: 250px;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.infobox1 {
+  background-color: #f2e7e7;
+  padding: 20px;
+  margin-top: -100px;
+}
+
+.head {
+  font-size: 1.8rem;
+  color: #444;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.content{
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: -10px;
+}
+
+
+.infobox{
+  margin:20px 40px;
+  background-color: #f5e9e9;
+ 
+}
+  h2{
+  font-size: 1.6rem;
+  margin: 15px 10px ;
+}
+p{
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: -10px 15px ;
+}
+
+
+img {
+  display: block;
+  width: 40%;
+  margin: 0% 30%  ;
+  border-radius: 30px;
+  outline: 2px solid orange;
+}
+
+.movie-poster img {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie-poster img:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  margin-top:20px
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar .nav-links {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  .infobox{
+    margin: 0px 10px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  #profilepic {
+    width: 180px;
+  }
+
+  .movie-poster img {
+    width: 120px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  #profilepic {
+    width: 140px;
+  }
+
+  .infobox h2 {
+    font-size: 1.4rem;
+  }
+
+  .infobox {
+    padding: 10px;
+  }
+
+  .para {
+    font-size: 0.9rem;
+  }
+
+  .movie-poster img {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+
+
